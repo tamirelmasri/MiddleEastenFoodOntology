@@ -1,0 +1,641 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/t/ontologies/2019/2/untitled-ontology-12#"
+     xml:base="http://www.semanticweb.org/t/ontologies/2019/2/untitled-ontology-12"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:MiddleEasternCuisine="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine">
+        <MiddleEasternCuisine:Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ontology on Middle Eastern Cusine from different parts of the Middle East regions
+ https://github.com/tamirelmasri/MiddleEastenFoodOntology</MiddleEasternCuisine:Description>
+        <MiddleEasternCuisine:License rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tamir Elmasri</MiddleEasternCuisine:License>
+        <rdfs:comment>Middle Eastern cuisine</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Middle Eastern Cuisine</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Description -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Description">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#License -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#License">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#HasVeg -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#HasVeg">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#hasReciepe"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#NoVeg"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Dishes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#NoMeat -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#NoMeat">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#NoReciepe"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#hasMeat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#NoReciepe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#NoReciepe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#hasReciepe"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#NoVeg -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#NoVeg">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#NoReciepe"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#RegionOfDish -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#RegionOfDish"/>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#hasMeat -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#hasMeat">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#hasReciepe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Dishes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Dishes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#hasReciepe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#hasReciepe">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Dishes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Dishes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#hasSauce -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#hasSauce">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Sauces"/>
+        <rdfs:comment>Type of Sauce</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Arayis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Arayis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#SignatureDishes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#BabaGhanoush -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#BabaGhanoush">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Baklava -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Baklava">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Pastries"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Basbosa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Basbosa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Pastries"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Beef -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Beef">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Savory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#BeefBurger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#BeefBurger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Beef"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#BeefKebab -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#BeefKebab">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Beef"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#BeefKibbeh -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#BeefKibbeh">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Beef"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#BeefKufta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#BeefKufta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Beef"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#BeefShawarma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#BeefShawarma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Beef"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Chicken -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Chicken">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Savory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#ChickenBurger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#ChickenBurger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Chicken"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#ChickenKebab -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#ChickenKebab">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Chicken"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#ChickenKibbeh -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#ChickenKibbeh">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Chicken"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#ChickenKufta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#ChickenKufta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Chicken"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#ChickenShawarma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#ChickenShawarma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Chicken"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#ChocolatePudding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#ChocolatePudding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Pudding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#CucumberSalad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#CucumberSalad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#DatesPudding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#DatesPudding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Pudding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Dishes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Dishes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#MiddleEasternCusine"/>
+        <rdfs:label xml:lang="en">Dishes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Dolma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Dolma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#SignatureDishes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Falafil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Falafil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Fattoush -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Fattoush">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#FoulMeddamas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#FoulMeddamas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#SignatureDishes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#GarlicSauce -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#GarlicSauce">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Sauces"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#GreenSalad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#GreenSalad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#GrilledHalloumi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#GrilledHalloumi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#SignatureDishes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Hummus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Hummus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#SignatureDishes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Kunafeh -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Kunafeh">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Pastries"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Mahshi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Mahshi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#SignatureDishes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Manakeesh -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Manakeesh">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#SignatureDishes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Masgouf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Masgouf">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#SignatureDishes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Meat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Meat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Partition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#MiddleEasternCusine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#MiddleEasternCusine"/>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Mulukhya -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Mulukhya">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#SignatureDishes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Partition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Partition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Pastries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Pastries">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Sweets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#PeachPudding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#PeachPudding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Pudding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#PepperSauce -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#PepperSauce">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Sauces"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Pudding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Pudding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Sweets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Region">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#MiddleEasternCusine"/>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Gulf"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Levant"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#North_Africa"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">Regions can be either North Africa, Gulf, oe Levant</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#RiceMandi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#RiceMandi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#SignatureDishes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#RicePudding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#RicePudding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Pudding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Sauces -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Sauces">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#GarlicSauce"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#PepperSauce"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#TahiniSauce"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Dishes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Savory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Savory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Dishes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#SignatureDishes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#SignatureDishes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Savory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Sweets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Sweets">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Dishes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Taboule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Taboule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Tahini -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Tahini">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#SignatureDishes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#TahiniSauce -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#TahiniSauce">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Sauces"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Tajin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Tajin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#SignatureDishes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Veg -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Veg">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Partition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Vegetable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Vegetable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Savory"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Gulf -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Gulf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Region"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Levant -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Levant">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Region"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#North_Africa -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#North_Africa">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Region"/>
+    </owl:Thing>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Gulf"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#Levant"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/t/ontologies/2019/2/MiddleEasternCuisine#North_Africa"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+
